@@ -1,13 +1,5 @@
-let num = 100;
-for (let num = 100; num <= 200; num++) {
-  if (num % 3 === 0 && num % 4 === 0 ) {
-    console.log("LoopyLighthouse");
-  } else if (num % 3 === 0) {
-    console.log("Loopy");
-  } else if (num % 4 === 0) {
-    console.log("Lighthouse");
-  } else {
-    console.log(num);
-  }
-    
+const amounts = [61.00, 52.25, 112.99, 5.00]; 
+for (let amount of amounts) {
+  total += amount;
 }
+console.log('Order total is: ', total);
