@@ -6,3 +6,7 @@ for (let row = 0; row <= 25; row++) {
   
 }
 
+for (let rep = 0; rep < 10; rep++) {
+  console.log("Lets dance!")(rep);
+  
+}
