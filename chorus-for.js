@@ -1,5 +1,19 @@
-const amounts = [61.00, 52.25, 112.99, 5.00]; 
-for (let amount of amounts) {
-  total += amount;
+function makeLine(length) {
+  var line = "";
+  for (var j = 1; j <= length; j++){
+    line += "* *";
+  }
+  return line + "\n";
 }
-console.log('Order total is: ', total);
+
+function buildTriangle(length) {
+  var triangle = "";
+  var lineNumber = 1;
+  for (let lineNumber = 1; lineNumber <=length; lineNumber++){
+    triangle = triangle + makeLine(lineNumber);
+   
+  }
+  return triangle
+}
+console.log(buildTriangle(15));
+
