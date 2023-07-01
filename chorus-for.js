@@ -1,19 +1,13 @@
-function makeLine(length) {
-  var line = "";
-  for (var j = 1; j <= length; j++){
-    line += "* *";
+// function expression catSays
+var catSays = function(max) {
+  var catMessage = "";
+  for (var i = 0; i < max; i++) {
+    catMessage += "meow ";
   }
-  return line + "\n";
-}
+  return catMessage;
+};
 
-function buildTriangle(length) {
-  var triangle = "";
-  var lineNumber = 1;
-  for (let lineNumber = 1; lineNumber <=length; lineNumber++){
-    triangle = triangle + makeLine(lineNumber);
-   
-  }
-  return triangle
+function helloCat(callbackFunct) {
+  return "Hello " + callbackFunct(4);
 }
-console.log(buildTriangle(15));
-
+console.log(helloCat(catSays));
