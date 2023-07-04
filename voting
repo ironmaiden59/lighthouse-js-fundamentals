@@ -18,3 +18,4 @@ let chooseStation = function (stations){
   return goodStations
 }
 console.log(chooseStation(stations));
+
