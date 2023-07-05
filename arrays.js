@@ -1,6 +1,11 @@
-const director = "Steven Spielberg";
-const films = ["Jaws", "Raiders of the Lost Ark", "A.I."];
-films[2] = "Jurassic Park";
-films;
-films.push("A.I.");
-films;
+let sum = 3 + 2;
+
+const doubleSum = function(a, b) {
+  let sum = a + b;
+  return sum * 2;
+}
+
+doubleSum(5, 4);
+
+console.log(sum);
+
