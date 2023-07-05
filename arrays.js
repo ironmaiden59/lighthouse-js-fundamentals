@@ -1,9 +1,14 @@
-var donuts = ["jelly donut", "chocolate donut", "glazed donut"];
+var donutBox = [
+  ["glazed", "chocolate glazed", "cinnamon"],
+  ["powdered", "sprinkled", "glazed cruller"],
+  ["chocolate cruller", "Boston creme", "creme de leche"]
+];
+for (let row = 0; row < donutBox.length; row++) {
+  for (let column = 0; column < donutBox.length; column++) {
+    console.log(donutBox[row][column]);
+    
+  }
+  
+}
 
-donuts.forEach(function(donut) {
-  donut += " hole";
-  donut = donut.toUpperCase();
-  console.log(donut);
-});
 
- 
