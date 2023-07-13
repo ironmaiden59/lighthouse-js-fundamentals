@@ -1,9 +1,9 @@
 const instructorWithLongestName = function(instructors) {
   let largest = instructors[0];
- 
-  for (let i = 1; i < instructors.length; i++) {
+
+  for (let i = 0; i < instructors.length; i++) {
     if (instructors[i]['name'].length > largest['name'].length) {
-      largest = instructors[i]
+      largest = instructors[i];
     }
     
   }
