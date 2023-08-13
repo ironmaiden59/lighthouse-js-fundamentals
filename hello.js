@@ -1,4 +1,11 @@
-const sayHello = function (name){
-      console.log("Hello " + name);
+const somename = "mike";
+
+
+
+
+try {
+somename = "Jon"   
+} catch (error) {
+      console.log("There was an error", error.somename);
 }
-sayHello("Ralph");
+console.log(somename);

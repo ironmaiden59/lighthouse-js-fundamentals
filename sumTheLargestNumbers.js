@@ -13,7 +13,7 @@ const sumLargestNumbers = function(data) {
       }
       
     }
-  return largest + secondlargest;
+  return largest
 };
 
 console.log(sumLargestNumbers([1, 10]));
