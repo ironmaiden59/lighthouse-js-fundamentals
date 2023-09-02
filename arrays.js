@@ -12,3 +12,4 @@ for (let i = 100; i < 200; i++) {
     if (i % 3 === 0) return "Loopy";
     if (i % 5 === 0) return "Lighthouse";
 }
+

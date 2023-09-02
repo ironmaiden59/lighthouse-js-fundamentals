@@ -42,4 +42,4 @@ ada.addSubordinates(arvinder);
 ada.addSubordinates(angela);
 ada.addSubordinates(phil);
 
-console.log(craig.numberOfPeopleToCEO);
+
