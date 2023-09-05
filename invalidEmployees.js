@@ -36,7 +36,6 @@ const sampleEmployees = [{
   "employee_id": "3011385777"
 }]
 
-
 const employeeWithMissingInformation = (employee) => {
   return !employee.employee_name || 
          !employee.employee_email || 
@@ -45,14 +44,13 @@ const employeeWithMissingInformation = (employee) => {
 }
 
 const invalidEmployees = (employees) => {
-  return employees.filter(employeeWithMissingInformation);
+  return employees.filter(employeeWithMissingInformation)
 }
 
-const employeeName = (employees) => {
+const employeeNames = (employees) => {
   let invalids = invalidEmployees(employees)
-  return invalids.map(employee => employee.employee_name)
+  return invalids.map(employee => employee.employee_name);
 }
 
-// Test the function
-console.log(invalidEmployees(sampleEmployees));
+console.log(employeeNames(sampleEmployees));
 
